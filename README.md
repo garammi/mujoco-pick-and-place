@@ -11,19 +11,50 @@ Users can transmit hand motions via a mobile device, allowing real-time adjustme
 
 ## **Key Features**
 **iOS ARKit Integration**: Control the robot using the MuJoCo Controller application on an iOS device. This feature is based on **github - omarrayyan/MujocoAR**
-![image](https://github.com/user-attachments/assets/b64a84e9-c592-4717-83d1-65b919e01293)
-
 
 **YOLO-Based Object Recognition**: Automatically detects objects and performs Pick-and-Place tasks.
-![image](https://github.com/user-attachments/assets/fc9ce791-6dc6-45bb-90c4-2afcc12a8184)
-![image](https://github.com/user-attachments/assets/38c73d54-e621-4354-a4dd-9a03afaf622a)
-
 
 **User Interactive System**: Allows manual adjustments when object detection fails.
 
 **Automated Pick-and-Place Execution**: Moves objects to predefined locations automatically.
 
-## **execution module**
-![image](https://github.com/user-attachments/assets/22141ce5-3212-49f4-9b1c-29812b70a873)
+
+##  Installation
+
+### 1. Install the iOS App  
+Download the **MuJoCo Controller** app from the App Store.  
+
+
+### 2. Install Python Package  
+Run the following command in your terminal to install the required Python package:
+
+```bash
+pip install mujoco_ar
+
+### **3. Clone the GitHub Repository**
+Clone this repository and move into the project directory:
+
+bash
+복사
+편집
+git clone https://github.com/garammi/mujoco-pick-and-place.git
+cd mujoco-pick-and-place
+4. Run the Simulation
+Start the simulation by executing main.py:
+
+bash
+복사
+편집
+python main.py
+5. Check IP Address
+Once main.py is running, check the terminal (CMD) window for the displayed IP address and Port number.
+
+6. Connect via iOS App
+text
+복사
+편집
+1. Open the MuJoCo Controller app on your iOS device.  
+2. Enter the IP address and port number shown in the terminal.  
+3. If the connection is successful, you’ll see that the iOS device is now linked with the simulation in real-time.
 
 
