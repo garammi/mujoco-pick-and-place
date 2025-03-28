@@ -1,6 +1,4 @@
 # mujoco-pick-and-place
-![image](https://github.com/user-attachments/assets/2b444ecb-6f6a-4975-8f30-26a33785d1e6)
-
 
 ## **introduction**
 In this study, we propose an **interactive robotic control framework** that integrates iOS devices with the MuJoCo simulator while utilizing YOLO-based object recognition. Conventional vision-based YOLO object detection methods often struggle with accurate detection, even within simulation environments, presenting a significant challenge. To address this issue, we developed a User-Interactive System that enhances the success rate of Pick-and-Place tasks by incorporating user intervention.
