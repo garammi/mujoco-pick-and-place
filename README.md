@@ -49,8 +49,6 @@ python main.py
 Once main.py is running, check the terminal (CMD) window for the displayed IP address and Port number.
 
 ### 6. Connect via iOS App
-![image](https://github.com/user-attachments/assets/d1a06a4b-d82b-4d75-b197-41bf6f7f9143)
-
 1. Open the MuJoCo Controller app on your iOS device.  
 2. Enter the IP address and port number shown in the terminal.  
 3. If the connection is successful, you’ll see that the iOS device is now linked with the simulation in real-time.
