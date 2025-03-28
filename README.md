@@ -30,29 +30,25 @@ Run the following command in your terminal to install the required Python packag
 
 ```bash
 pip install mujoco_ar
+```
 
-### **3. Clone the GitHub Repository**
+### 3. Clone the GitHub Repository
 Clone this repository and move into the project directory:
 
-bash
-복사
-편집
+```bash
 git clone https://github.com/garammi/mujoco-pick-and-place.git
 cd mujoco-pick-and-place
-4. Run the Simulation
+```
+### 4. Run the Simulation
 Start the simulation by executing main.py:
 
-bash
-복사
-편집
+```bash
 python main.py
-5. Check IP Address
+```
+### 5. Check IP Address
 Once main.py is running, check the terminal (CMD) window for the displayed IP address and Port number.
 
-6. Connect via iOS App
-text
-복사
-편집
+### 6. Connect via iOS App
 1. Open the MuJoCo Controller app on your iOS device.  
 2. Enter the IP address and port number shown in the terminal.  
 3. If the connection is successful, you’ll see that the iOS device is now linked with the simulation in real-time.
