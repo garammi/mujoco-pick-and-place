@@ -13,7 +13,7 @@ Users can transmit hand motions via a mobile device, allowing real-time adjustme
 This system is composed of four main modules that operate together to realize an interactive Pick-and-Place task in a simulated environment:
 
 ### 1. MuJoCo-based Simulation Environment
-- Includes Kinova Gen3 6DoF robot arm with a Robotiq 2F-85 gripper.
+- Includes kuka iiwa 14-7DoF robot arm with a Robotiq 2F-85 gripper.
 - Objects such as fruits, bowls, and tables are placed randomly in the MuJoCo scene.
 
 ### 2. Pick-and-Place Execution Module
@@ -37,6 +37,25 @@ These features significantly enhance the flexibility and reliability of the syst
 ---
 
 ##  Installation
+
+> This system operates by receiving motion data from an iOS device using ARKit.  
+> Therefore, it **cannot be run on Google Colab or any cloud-based environments**.  
+> You must execute the system **locally** with proper device connectivity.
+
+### System Requirements
+
+| Component         | Version/Model          |
+|------------------|------------------------|
+| Simulator         | MuJoCo 3.1.6           |
+| Robot Model       | KUKA iiwa 14           |
+| Gripper Model     | Robotiq 2F-85          |
+| Object Detector   | YOLOv8x.pt             |
+| Programming Lang. | Python 3.8             |
+| OS                | Windows 11             |
+| Communication     | MuJoCo AR 1.1          |
+| iOS App           | MuJoCo Controller      |
+| iOS Device        | iPhone 13, iOS 18.1.1  |
+
 
 ### 1. Install the iOS App  
 Download the **MuJoCo Controller** app from the App Store.  
@@ -70,6 +89,7 @@ Once main.py is running, check the terminal (CMD) window for the displayed IP ad
 2. Enter the IP address and port number shown in the terminal.  
 3. If the connection is successful, you’ll see that the iOS device is now linked with the simulation in real-time.
 
+Once you complete the installation, follow the steps in the [Pick-and-Place System](#pick-and-place-system) section below to run the system.
 
 ## Pick-and-Place System
 
