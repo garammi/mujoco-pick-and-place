@@ -42,7 +42,9 @@ These features significantly enhance the flexibility and reliability of the syst
 > Therefore, it **cannot be run on Google Colab or any cloud-based environments**.  
 > You must execute the system **locally** with proper device connectivity.
 
-### System Requirements
+### Experimental Setup
+
+This system was tested and validated under the following environment:
 
 | Component         | Version/Model          |
 |------------------|------------------------|
@@ -56,6 +58,11 @@ These features significantly enhance the flexibility and reliability of the syst
 | iOS App           | MuJoCo Controller      |
 | iOS Device        | iPhone 13, iOS 18.1.1  |
 
+> **Recommended:**  
+> - Use **MuJoCo 3.1.6 or higher** for compatibility.  
+> - Use **Python 3.8**, as newer versions may cause compatibility issues with the MuJoCo Python bindings.
+
+---
 
 ### 1. Install the iOS App  
 Download the **MuJoCo Controller** app from the App Store.  
