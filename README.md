@@ -8,16 +8,33 @@ In this study, we propose an **interactive robotic control framework** that inte
 Users can transmit hand motions via a mobile device, allowing real-time adjustment of the robot's end effector position, enabling more intuitive control. This approach provides a more natural way to operate the robot’s end-effector. By using an easily accessible device like a smartphone, it also allows for remote operation of the robot. Furthermore, the system combines vision-based detection with user intervention, creating a more intuitive and successful Pick-and-Place system compared to vision-only methods. Finally, experimental evaluations demonstrated that the proposed system achieves a higher success rate than conventional Vision-Only approaches. These results verify that our approach improves task performance by integrating vision-based detection and user intervention, demonstrating its potential for application in various unstructured environments.
 
 
-## **Key Features**
-**iOS ARKit Integration**: Control the robot using the MuJoCo Controller application on an iOS device. This feature is based on **github - omarrayyan/MujocoAR**
+## System Overview
 
-**YOLO-Based Object Recognition**: Automatically detects objects and performs Pick-and-Place tasks.
+This system is composed of four main modules that operate together to realize an interactive Pick-and-Place task in a simulated environment:
 
-**User Interactive System**: Allows manual adjustments when object detection fails.
+### 1. MuJoCo-based Simulation Environment
+- Includes Kinova Gen3 6DoF robot arm with a Robotiq 2F-85 gripper.
+- Objects such as fruits, bowls, and tables are placed randomly in the MuJoCo scene.
 
-**Automated Pick-and-Place Execution**: Moves objects to predefined locations automatically.
+### 2. Pick-and-Place Execution Module
+- Implemented within `main.py` via the `mac_launch()` function.
+- Controls the robot arm trajectory and grasp logic.
+- Based on the `button_state` value, it switches between Pick, Place, and user-defined operations.
 
+### 3. Vision-Only Object Detection Module
+- Uses YOLO to detect and classify visible objects in the scene.
+- Detection results are listed for the user to select an object or place location.
+- If detection fails or is inaccurate, the system defers to user interaction.
 
+### 4. User Interactive System
+- Allows the user to manually specify object or position using an iOS device.
+- The following interactions are supported:
+  - `User Defined Position`: If no appropriate place location is detected, the user can physically move the device to the desired location and press a button to register it.
+  - `User Defined Object`: If no object of interest is detected, the user can center the gripper view on the desired object and press a button to select it.
+
+These features significantly enhance the flexibility and reliability of the system in uncertain or cluttered environments.
+
+---
 
 ##  Installation
 
